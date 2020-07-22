@@ -65,3 +65,19 @@ console.log(typeof object3, object3);
 
 // Lire une ligne d'un objet
 console.log(typeof object3.firstname, object3.firstname);
+
+
+
+// Les données sont dynamiques
+// --
+var x; // Undefined
+console.log(typeof x, x);
+
+x = 42; // Number
+console.log(typeof x, x);
+
+x = "Sponge Bob"; // String
+console.log(typeof x, x);
+
+x = undefined; // Undefined
+console.log(typeof x, x);
