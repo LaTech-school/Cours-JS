@@ -1,0 +1,6 @@
+- Créer une variable et y stocker une chaine
+- Créer une variable et y stocker un nombre (entier ou decimal)
+- Créer un tableau, lui ajouter en index 0 la variable contenant le nombre et en index 1 la variable contenant la chaine
+
+- Afficher le tableau dans la console
+- Afficher l'index 1 du tableau dans la console
