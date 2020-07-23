@@ -14,6 +14,8 @@ console.log(typeof string2, string2);
 // --
 var number1 = 42;
 console.log(typeof number1, number1);
+var decimal = 21.5;
+console.log(typeof decimal, decimal);
 
 var number2 = "42"; // NOT A NUMBER
 console.log(typeof number2, number2);
@@ -26,8 +28,8 @@ console.log("42 x number1 = ", 42*number1);
 
 // boolean - bool
 // --
-var bool1 = true;
-var bool2 = false;
+var bool1 = true; // Vrai
+var bool2 = false; // Faux
 console.log(typeof bool1, bool1);
 console.log(typeof bool2, bool2);
 
@@ -46,6 +48,7 @@ console.log(typeof array3, array3);
 
 // Lire une ligne d'un tableau
 console.log(typeof array3[1], array3[1]);
+console.log(typeof array3[0], array3[0]);
 
 
 
@@ -81,3 +84,38 @@ console.log(typeof x, x);
 
 x = undefined; // Undefined
 console.log(typeof x, x);
+
+
+
+// (undefined) - Valeur non définie
+// --
+
+var y;
+var z = undefined;
+
+console.log(y);
+console.log(z);
+
+
+
+// (Null) - Nule
+// --
+
+var a;
+var b = null;
+
+console.log(typeof a, a);
+console.log(typeof b, b);
+console.log(null == undefined);
+console.log(null === undefined);
+
+
+
+// (empty) - valeur de chaine vide
+// --
+
+var c = "";
+
+console.log(typeof c, c);
+console.log(c == null);
+console.log(c == undefined);
