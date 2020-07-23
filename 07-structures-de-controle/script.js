@@ -91,3 +91,9 @@
 // else {
 //     console.log("Ado");
 // }
+
+
+var bobby = "boy";
+// bobby == "boy"
+
+// Tester et afficher si Bobby est un garçon (boy) ou une fille (girl) sinon... bobby est  une licorne
