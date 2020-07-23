@@ -253,6 +253,8 @@ console.log( f + e + d + (10 + 5) );
 
 // Opérateur conditionnel ternaire
 // --
+// Symbole:     ?
+// Syntaxe:     a == b ? true : false;
 
 
 var gender = "O";
@@ -265,4 +267,10 @@ else {
     genderName = "Feminin";
 }
 
+console.log(genderName);
+
+
+
+var gender = "m";
+var genderName = (gender == "M") ? "Masculin" : "Feminin";
 console.log(genderName);

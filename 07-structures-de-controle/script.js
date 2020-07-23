@@ -6,9 +6,9 @@
 
 // var a = 5;
 
-// if (a > 5) {
-//     alert('Variable "a" supérieure a 5');
-// }
+if (a > 5) {
+    alert('Variable "a" supérieure a 5');
+}
 // if (a > 15) {
 //     alert('Variable "a" supérieure a 15');
 // }
@@ -35,14 +35,14 @@
 
 // // Condition "if..else" (si...sinon)
 // // --
-// // Syntaxe:     if (a) { ... } else { ... }
-// if (a >= 10) {
-//     alert("Supérieur ou égale à 10");
-// }
-// else // if (a < 10) 
-// {
-//     alert("Inférieur à 10");
-// }
+// Syntaxe:     if (a) { ... } else { ... }
+if (a >= 10) {
+    alert("Supérieur ou égale à 10");
+}
+else // if (a < 10) 
+{
+    alert("Inférieur à 10");
+}
 
 // var age = 15;
 
