@@ -44,8 +44,6 @@
 //     alert("Inférieur à 10");
 // }
 
-
-
 // var age = 15;
 
 // if (age >= 18) {
@@ -62,6 +60,18 @@
 //     // pas adulte
 // }
 
+
+var gender = "O";
+var genderName;
+
+if (gender == "M") {
+    genderName = "Masculin";
+}
+else {
+    genderName = "Feminin";
+}
+
+console.log(genderName);
 
 
 
@@ -92,8 +102,30 @@
 //     console.log("Ado");
 // }
 
-
-var bobby = "boy";
-// bobby == "boy"
-
+// if ... else if ... else
 // Tester et afficher si Bobby est un garçon (boy) ou une fille (girl) sinon... bobby est  une licorne
+
+var bobby = "alien";
+
+if ( bobby == "boy" ) {
+    console.log("Garçon");
+}
+else if (bobby == "girl") {
+    console.log("Fille");
+}
+else {
+    console.log("Licorne");
+}
+
+
+// Instruction Switch
+switch (bobby) {
+    case 'boy':
+        console.log("Garçon");
+    break;
+    case 'girl':
+        console.log("Fille");
+    break;
+    default:
+        console.log("Licorne");
+}
