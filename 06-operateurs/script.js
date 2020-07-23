@@ -235,6 +235,21 @@ console.log(a);
 var a = "Hello ";
 var b = "World";
 console.log( a + b );
+console.log( a.concat(b) );
 
 var firstname = "Bruce";
 console.log( "son nom est "+ firstname );
+
+var c = "Clark ";
+    c += "Kent";
+console.log(c);
+
+var d = "Bobby";
+var e = 42;
+var f = 10;
+console.log( (d + e) + f );
+console.log( f + e + d + (10 + 5) );
+
+
+// Opérateur conditionnel ternaire
+// --
