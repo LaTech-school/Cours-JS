@@ -87,3 +87,14 @@ function sayYep(param="truc") {
 
 setTimeout( sayYep , 5000 );
 sayYep("machin");
+
+
+
+
+
+// Fonction Fléchée
+// --
+
+var divide = (numerator, denominator) => {
+    alert( numerator / denominator );
+}

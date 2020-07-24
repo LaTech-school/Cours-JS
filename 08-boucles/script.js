@@ -110,3 +110,19 @@ var fruits = [
 
 
 // Boucle : ForEach
+// Syntaxe: array.forEach( function(item, index){ ... } )
+var fruits = [
+    /* 0 */ "Pommes", 
+    /* 1 */ "Poires", 
+    /* 2 */ "Bananes"
+];
+
+// fruits.forEach( function( item, index ){
+//     console.log( index );
+// } );
+// fruits.forEach( (item, index) => {
+//     console.log( index, item );
+// });
+fruits.forEach( item => {
+    console.log( item );
+});
