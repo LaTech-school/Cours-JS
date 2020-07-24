@@ -22,3 +22,6 @@ var users = [
 
 // Afficher Bruce
 console.log( users[0].firstname );
+
+// Afficher Kent
+console.log( users[1].lastname );
