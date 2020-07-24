@@ -1,0 +1,1 @@
+// Manipulation de chaines de caractères

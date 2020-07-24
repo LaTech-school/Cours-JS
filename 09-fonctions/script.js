@@ -77,16 +77,16 @@
 // } , 5000 );
 
 
-function sayYep(param="truc") {
-    alert("YEP !!! " + param);
-} 
+// function sayYep(param="truc") {
+//     alert("YEP !!! " + param);
+// } 
 
-// setTimeout( function(){
-//     sayYep();
-// } , 5000 );
+// // setTimeout( function(){
+// //     sayYep();
+// // } , 5000 );
 
-setTimeout( sayYep , 5000 );
-sayYep("machin");
+// setTimeout( sayYep , 5000 );
+// sayYep("machin");
 
 
 
@@ -95,6 +95,33 @@ sayYep("machin");
 // Fonction Fléchée
 // --
 
-var divide = (numerator, denominator) => {
-    alert( numerator / denominator );
+// var divide = (numerator, denominator) => {
+//     alert( numerator / denominator );
+// }
+
+
+
+// Sortie de fonction
+// --
+// mot clé "return"
+
+// var divide = (numerator, denominator) => {
+//     // alert( numerator / denominator );
+//     return ( numerator / denominator );
+// }
+
+// // var result = 10 /5;
+// // console.log( result );
+// console.log( divide(10,5) );
+
+
+function remplirBaignoir(contenu="rien") {
+    return "On rempli la baignoir avec "+ contenu;
 }
+document.getElementById("baignoir").innerHTML = remplirBaignoir("de l'eau");
+
+// remplirBaignoir(); //  "On rempli la baignoir avec rien"
+// console.log( remplirBaignoir("de l'eau") ); // "On rempli la baignoir avec de l'eau"
+// console.log( "On rempli la baignoir avec de l'eau" );
+
+// remplirBaignoir("des billets"); // "On rempli la baignoir avec des billets"

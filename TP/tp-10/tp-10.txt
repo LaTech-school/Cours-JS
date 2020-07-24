@@ -1,4 +1,3 @@
-saut de ligne 
 array.push()
 sortie de fonction
 
