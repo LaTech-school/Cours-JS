@@ -257,7 +257,7 @@ console.log( f + e + d + (10 + 5) );
 // Syntaxe:     a == b ? true : false;
 
 
-var gender = "O";
+var gender = "F";
 var genderName;
 
 if (gender == "M") {
@@ -271,6 +271,6 @@ console.log(genderName);
 
 
 
-var gender = "m";
+var gender = "M";
 var genderName = (gender == "M") ? "Masculin" : "Feminin";
 console.log(genderName);

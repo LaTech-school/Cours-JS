@@ -7,15 +7,15 @@
 // Boucle : While
 // Execute du code tant que la condition est vérifiée
 
-var i = 4;
+// Initialisation de bouclage
+var i = 0;
 
-// while (i < 10) {
-//     console.log("i vaux "+ ++i);
-// }
+while (i < 10) // condition de bouclage
+{
+    console.log(i);
 
+    // Incrémentation de boucle
+    // ++i;
+    i = i + 1;
+}
 
-// Boucle : Do While
-// Execute du code au moins une fois le code avant de verifier la condition
-do {
-    console.log("i vaux "+ i++);
-} while (i < 10)
