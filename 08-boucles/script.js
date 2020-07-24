@@ -73,11 +73,11 @@
 // Boucle : For Of
 // for (let item of array) {}
 
-// var fruits = [
-//     /* 0 */ "Pommes", 
-//     /* 1 */ "Poires", 
-//     /* 2 */ "Bananes"
-// ];
+var fruits = [
+    /* 0 */ "Pommes", 
+    /* 1 */ "Poires", 
+    /* 2 */ "Bananes"
+];
 
 // for (let fruit of fruits) 
 // {
@@ -88,16 +88,16 @@
 
 // Boucle : For In
 // for (let property in object) {}
-var hero = {
-    name: "Batman",
-    firstname: "Bruce",
-    lastname: "WAYNE",
-    age: 80,
-    powers: [
-        "money",
-        "belt"
-    ]
-};
+// var hero = {
+//     name: "Batman",
+//     firstname: "Bruce",
+//     lastname: "WAYNE",
+//     age: 80,
+//     powers: [
+//         "money",
+//         "belt"
+//     ]
+// };
 
 // for (let line in hero) 
 // {
@@ -109,3 +109,4 @@ var hero = {
 
 
 
+// Boucle : ForEach
