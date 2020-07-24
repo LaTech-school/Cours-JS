@@ -55,14 +55,35 @@
 // setUser(80, "Bruce");
 
 
-// Fonction avec paramètres 
-function setUser(firstname, age=20) {
-    alert(`${firstname}, age : ${age}`);
-}
-// setUser(80, "Bruce");
-setUser("Bruce", 64);
+// // Fonction avec paramètres 
+// function setUser(firstname, age=20) {
+//     alert(`${firstname}, age : ${age}`);
+// }
+// // setUser(80, "Bruce");
+// setUser("Bruce", 64);
 
 
 // Fonction anonyme
 // --
 
+// var divide = function(numerator, denominator) {
+//     alert( numerator / denominator );
+// }
+
+// divide(10, 5);
+
+// setTimeout( function(){
+//     alert("5 secondes de perdues !!");
+// } , 5000 );
+
+
+function sayYep(param="truc") {
+    alert("YEP !!! " + param);
+} 
+
+// setTimeout( function(){
+//     sayYep();
+// } , 5000 );
+
+setTimeout( sayYep , 5000 );
+sayYep("machin");
