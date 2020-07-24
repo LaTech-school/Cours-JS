@@ -21,7 +21,9 @@ var users = [
 ];
 
 // Afficher Bruce
-console.log( users[0].firstname );
+console.log( users ); // le tableau "users"
+console.log( users[0] ); // index 0 du tableau users
+console.log( users[0].firstname ); // propriété "firstname" de l'index 0 du tableau users
 
 // Afficher Kent
 console.log( users[1].lastname );
