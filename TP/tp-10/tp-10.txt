@@ -1,0 +1,86 @@
+saut de ligne 
+array.push()
+sortie de fonction
+
+
+
+
+Affficher la liste des pizzas dans un (confirm)
+si invalide : ooppss.. recommence
+si valide : ajoute au panier
+
+
+
+Bienvenu à la PizzaYolo !
+
+Objectif: Créer un panier pour une commande de pizzas.
+
+
+Creer l'objet "user", pour sto
+Creer le tableau "cart".
+Créer le tableau "pizzas"
+
+Le programme démarre lorsque l'utilisateur clique sur le bouton "commander"
+
+1. (alert) Afficher un message :
+    Bienvenu à la PizzaYolo !\n 
+    Commençons par faire connaissance.
+
+2. (prompt) Demander le Prénom de l'utilisateur et le stocker dans la propriété "firstname" de l'objet "user" 
+3. (prompt) Demander le Nom de l'utilisateur et le stocker dans la propriété "lastname" de l'objet "user" 
+
+4. (confim) Saluer l'utilisateur et lui afficher la liste de vos pizzas :
+    Bonjour $firstname, voici nos pizzas :\n 
+    \n 
+    - pizza[0].name : pizza[0].price €\n
+    - pizza[1].name : pizza[1].price €\n
+    - pizza[2].name : pizza[2].price €\n
+    \n
+    Avez-vous fait votre choix ?
+
+    réponse: non -> 5
+    réponse: oui -> 6
+
+5 (confirm) afficher le message : 
+    Très bien, souhaitez-vous revoir la liste de nos pizzas ?
+
+    réponse: non -> 7
+    réponse: oui -> 8
+
+6 (prompt) afficher le message :
+    Qu'elle pizza souhaitez-vous commander ?
+
+    réponse: annuler -> 9
+    réponse: ok -> 10
+
+7 (alert) afficher le message :
+    Merci et à bientot.
+    (fin du programme)  
+
+8 (confirm) afficher le message :
+    voici nos pizzas :\n 
+    \n 
+    - pizza[0].name : pizza[0].price €\n
+    - pizza[1].name : pizza[1].price €\n
+    - pizza[2].name : pizza[2].price €\n
+    \n
+    Avez-vous fait votre choix ?
+
+    réponse: non -> 5
+    réponse: oui -> 6
+
+
+9 Verifier le panier
+    si le panier est vide -> 7
+    si le panier contient des articles -> 11
+
+10 Récupérer le nom de la pizza et tester si celle ci existe dans la liste des pizzas venduent
+    si non -> 
+
+11
+
+12 (alert) afficher un message:
+    Ooops... la pizza $pizza n'est pas valide.
+
+    ok -> 6
+    
