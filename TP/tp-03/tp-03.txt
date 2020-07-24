@@ -1,0 +1,12 @@
+Créer un tableaux "pizzas" contenant des objets
+Les objets definissent une pizza avec les propriété "name" et "price"
+
+1. (prompt) affiche la liste des pizzas + prix, l'utilisateur saisi le nom d'une pizza et clique OK 
+    
+    si la pizza existe: 2
+    si la pizza n'existe pas: 3
+
+2. on affiche le nom et le prix de la pizza en boite d'alerte 
+
+3. on afficher un message d'erreur en boite d'alerte
+    ok: 1
