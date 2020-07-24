@@ -1,5 +1,5 @@
 Créer un tableaux "pizzas" contenant des objets
-Les objets definissent une pizza avec les propriété "name" et "price"
+Les objets definissent une pizza avec les propriétés "name" et "price"
 
 1. (prompt) affiche la liste des pizzas + prix, l'utilisateur saisi le nom d'une pizza et clique OK 
     
