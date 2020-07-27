@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Evenements</title>
+
+    <style>
+    section > div {
+        border: 1px solid red;
+        height: 50px;
+    }
+    </style>
+</head>
+<body>
+    
+    <section>
+        <h2>Evenements de souris</h2>
+
+        <div id="cliqueDeSouris">Clique de souris</div>
+        <div id="survolDeSouris">Survol de souris</div>
+    </section>
+    
+    <section>
+        <h2>Evenements de clavier</h2>
+
+        <div>
+            <input id="touchePressee" type="text">
+            <div id="logTouchePressee">-</div>
+        </div>
+        <div>
+            <input id="toucheRelachee" type="text">
+            <div id="logToucheRelachee">-</div>
+        </div>
+    </section>
+
+    <!-- Scripts JS -->
+    <script src="script.js"></script>
+</body>
+</html>
