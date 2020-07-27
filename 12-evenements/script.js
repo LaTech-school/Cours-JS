@@ -29,3 +29,7 @@ elementPourSurvol.addEventListener('mouseout', () => {
 // Evenements de clavier
 // --
 
+var inputTouchePressee = document.getElementById('touchePressee');
+inputTouchePressee.addEventListener('keypress', () => {
+    console.log(inputTouchePressee.value);
+});
