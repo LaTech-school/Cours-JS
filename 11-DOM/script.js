@@ -8,9 +8,10 @@
 //          |-- HEADER
 //          |-- DIV.main-content
 //          |   |-- MAIN
+//          |   |   |-- H1
 //          |   |   |-- SECTION
 //          |   |   |   |-- ARTICLE
-//          |   |   |   |   |-- H1
+//          |   |   |   |   |-- H2
 //          |   |   |   |   |-- P
 //          |   |   |   |   |-- P
 //          |   |-- ASIDE
