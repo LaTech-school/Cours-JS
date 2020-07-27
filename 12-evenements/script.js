@@ -29,7 +29,13 @@ elementPourSurvol.addEventListener('mouseout', () => {
 // Evenements de clavier
 // --
 
-var inputTouchePressee = document.getElementById('touchePressee');
-inputTouchePressee.addEventListener('keypress', () => {
-    console.log(inputTouchePressee.value);
+var entree = document.getElementById('elEntree');
+var sortie = document.getElementById('elSortie');
+
+entree.addEventListener('keyup', () => {
+    sortie.innerHTML = entree.value;
+});
+
+entree.addEventListener('mouseover', () => {
+    sortie.style = "background-color: yellow";
 });
