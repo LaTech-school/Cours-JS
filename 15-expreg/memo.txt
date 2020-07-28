@@ -1,0 +1,12 @@
+
+/mon_expression/flag
+@mon_expression@flag
+#mon_expression#flag
+
+Symbole d'ouverture de l'expression : /
+Symbole defermeture de l'expression : /
+
+^ Ce que je recherche commence par ...  : /^h/ commence par "h"
+$ Ce que je recherche termine par ... : /h$/ se termine par "h"
+[] Groupement 
++ sur une longueur de 1 à infinie...

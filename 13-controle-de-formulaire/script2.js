@@ -66,47 +66,26 @@ for (let i=date.getFullYear(); i >= date.getFullYear() - 100; i--)
 // Controle du formulaire
 // --
 
-// On considère que le formumaire est OK par defaut
-var isValid = true;
-
-
-// Recupération des noeuds HTML
-// --
-
 // Ciblage du <form> + stockage dans la variable "form"
 var form = document.getElementsByTagName('FORM')[0];
-var el_firstname = document.getElementById('firstname');
-var el_lastname = document.getElementById('lastname');
-
-// ...
-// ...
-// ...
-// ...
-// ...
-
-
-
-// Déclencheur d'evenements
-// --
 
 // Ecoute l'evenement de soumission du formulaire
 form.addEventListener('submit', checkForm);
-el_firstname.addEventListener('blur', checkFirstname);
-el_lastname.addEventListener('blur', checkLastname);
 
-// ...
-// ...
-// ...
-// ...
-// ...
-// ...
-
-
-// Declaration des fonction de controle de données
-// --
-
-function checkFirstname() 
+// Fonction de controle du formulaire
+function checkForm(event) 
 {
+    // Etat par defaut du formulaire
+    // --
+    var isValid = true;
+    // var isValid = false;
+
+
+    // Controle du form
+    // --
+    
+    // controle du champ firstname
+    var el_firstname = document.getElementById('firstname');
     var firstname = el_firstname.value;
 
     if (!/^[a-zA-Z ]+$/.test(firstname)) {
@@ -115,39 +94,15 @@ function checkFirstname()
     } else {
         el_firstname.style = "border: 1px solid green";
     }
-}
-
-function checkLastname() 
-{
-    var lastname = el_lastname.value;
-
-    if (!/^[a-zA-Z ]+$/.test(lastname)) {
-        isValid = false;
-        el_lastname.style = "border: 1px solid red";
-    } else {
-        el_lastname.style = "border: 1px solid green";
-    }
-}
-
-// ...
-// ...
-// ...
-// ...
-// ...
-
-// Fonction de controle du formulaire
-function checkForm(event) 
-{
-    // Controle du form
-    // --
-    checkFirstname();
-    checkLastname();
-    // ...
-    // ...
-    // ...
-    // ...
-    // ...
     
+
+
+
+
+
+
+
+
 
     // Controle de l'etat du formulaire
     // --
