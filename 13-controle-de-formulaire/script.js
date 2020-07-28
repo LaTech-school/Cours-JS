@@ -7,10 +7,6 @@ var birthday = document.getElementById('birth_day');
 var birthmonth = document.getElementById('birth_month');
 var birthyear = document.getElementById('birth_year');
 
-birthday.style = "border: 10px solid blue";
-birthmonth.style = "border: 10px solid yellow";
-birthyear.style = "border: 10px solid red";
-
 // Générer le champ "birthday"
 for (let i=1; i<=31; i++) 
 {
@@ -27,10 +23,22 @@ for (let i=1; i<=31; i++)
     birthday.appendChild(option);
 }
 
-
 // Générer le champ "birthmonth"
+var monthes = ["janvier","février","mars","avril","mai","juin","juillet","aout","septembre","octobre","novembre","décembre"];
+for (let i=0; i<12; i++) 
+{
+    // Create d'une balise HTML
+    let option = document.createElement('OPTION');
 
+    // Ajoute de l'attribut "value" sur l'<option>
+    option.setAttribute('value', (i+1));
 
+    // Injection du texte dans l'<option> 
+    option.textContent = monthes[i];
+
+    // Inject <option> dans le <select>
+    birthmonth.appendChild(option);
+}
 
 // Générer le champ "birthyear"
 var date = new Date;
