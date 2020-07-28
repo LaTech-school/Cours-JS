@@ -7,60 +7,70 @@
 </head>
 <body>
     
-    <form method="POST">
+    <!-- <form action="adresse/du/fichier/de/traitement_des_donnees.php" method="GET"></form> -->
+    <!-- <form action="adresse/du/fichier/de/traitement_des_donnees.php" method="POST"></form> -->
 
+    <!-- Exemple -->
+    <!-- <div>
+        <label for="lien_entre_label_et_input">Firstname</label>
+        <input type="text" 
+            id="lien_entre_label_et_input" 
+            name="clé_pour_parametre_du_serveur">
+    </div>
+    clé_pour_parametre_du_serveur=valeur20%saisie20%dans20%le20%champ -->
+    
+    <!-- <select name="gender2">
+        <option value="M2">Male</option>
+        <option value="F2">Female</option>
+        <option value="N2">Neither</option>
+    </select> -->
+
+
+    <form method="POST" novalidate>
+        
         <!-- Firstname -->
         <div>
             <label for="firstname">Firstname</label>
-            <input type="text" id="firstname" name="firstname">
+            <input type="text" id="firstname" name="firstname" required>
         </div>
 
         <!-- Lastname -->
         <div>
             <label for="lastname">Lastname</label>
-            <input type="text" id="lastname" name="lastname">
+            <input type="text" id="lastname" name="lastname" required>
         </div>
 
         <!-- Gender -->
         <div>
             <label for="male">
-                <input type="radio" id="male" name="gender"> Male
+                <input type="radio" id="male" name="gender" value="M" required> Male
             </label>
             <label for="female">
-                <input type="radio" id="female" name="gender"> Female
+                <input type="radio" id="female" name="gender" value="F" required> Female
             </label>
             <label for="neither">
-                <input type="radio" id="neither" name="gender"> Male
+                <input type="radio" id="neither" name="gender" value="N" required> Neither
             </label>
         </div>
 
         <!-- Birthday -->
         <div>
             <label for="birth_day">Date of bith</label>
-            <select name="birth[day]" id="birth_day">
+            <select name="birth[day]" id="birth_day" required>
                 <option value=""></option>
-                <option value="1">01</option>
-                <option value="2">02</option>
-                <option value="3">03</option>
             </select>
-            <select name="birth[month]" id="birth_month">
+            <select name="birth[month]" id="birth_month" required>
                 <option value=""></option>
-                <option value="1">January</option>
-                <option value="2">February</option>
-                <option value="3">March</option>
             </select>
-            <select name="birth[year]" id="birth_year">
+            <select name="birth[year]" id="birth_year" required>
                 <option value=""></option>
-                <option value="2000">2000</option>
-                <option value="1999">1999</option>
-                <option value="1998">1998</option>
             </select>
         </div>
 
         <!-- Email -->
         <div>
             <label for="email">Email</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email" required>
         </div>
 
         <!-- Repeated Email -->
@@ -72,19 +82,22 @@
         <!-- Password -->
         <div>
             <label for="password">Password</label>
-            <input type="password" id="password" name="password">
+            <input type="password" id="password" name="password" required>
         </div>
 
-        <!-- Password -->
+        <!-- TOS -->
         <div>
-            <label for="tof">
-                <input type="checkbox" id="tof" name="tof">
+            <label for="tos">
+                <input type="checkbox" id="tos" name="tos" required>
                 I agree to the terms of service
             </label>
-            
         </div>
 
+        <button type="submit">Register</button>
+
     </form>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
