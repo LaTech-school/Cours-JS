@@ -98,7 +98,7 @@ el_firstname.addEventListener('blur', checkFirstname);
 el_lastname.addEventListener('blur', checkLastname);
 el_email.addEventListener('blur', checkEmail);
 el_remail.addEventListener('blur', checkRepeatedEmail);
-el_password.addEventListener('blur', checkPassword);
+el_password.addEventListener('keyup', checkPassword);
 
 el_birthday.addEventListener('change', checkBirthday);
 el_birthmonth.addEventListener('change', checkBirthday);
@@ -135,8 +135,9 @@ function checkLastname()
 function checkEmail()
 {
     var email = el_email.value;
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-    if (!/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(email)) {
+    if (!re.test(email)) {
         isValid = false;
         el_email.style = "border: 1px solid red";
     } else {
@@ -160,6 +161,15 @@ function checkRepeatedEmail()
 function checkPassword()
 {
     var password = el_password.value;
+
+    // /^               commence par
+    // (?=.*[0-9])      un caractère numérique obligatoire
+    // (?=.*[a-z])      un caractère alphabetique minuscule obligatoire
+    // (?=.*[A-Z])      un caractère alphabetique majuscule obligatoire
+    // (?=.*[!@#\$%\^\&*\)\(+=._-])     un caractère spécial obligatoire
+    // .                N'importe quel caractère
+    // {8,32}           Sur un longueur de 8 minimum à 32 max
+    // $/               termine par
 
     if (!/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#\$%\^\&*\)\(+=._-]).{8,32}$/.test(password)) {
         isValid = false;
