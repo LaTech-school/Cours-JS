@@ -77,12 +77,15 @@ var isValid = true;
 var form = document.getElementsByTagName('FORM')[0];
 var el_firstname = document.getElementById('firstname');
 var el_lastname = document.getElementById('lastname');
+var el_email = document.getElementById('email');
+var el_remail = document.getElementById('repeated_email');
+var el_password = document.getElementById('password');
 
-// ...
-// ...
-// ...
-// ...
-// ...
+var el_birthday = document.getElementById('birth_day');
+var el_birthmonth = document.getElementById('birth_month');
+var el_birthyear = document.getElementById('birth_year');
+
+var el_gender = document.querySelector('input[name="gender"]');
 
 
 
@@ -93,13 +96,13 @@ var el_lastname = document.getElementById('lastname');
 form.addEventListener('submit', checkForm);
 el_firstname.addEventListener('blur', checkFirstname);
 el_lastname.addEventListener('blur', checkLastname);
+el_email.addEventListener('blur', checkEmail);
+el_remail.addEventListener('blur', checkRepeatedEmail);
+el_password.addEventListener('blur', checkPassword);
 
-// ...
-// ...
-// ...
-// ...
-// ...
-// ...
+el_birthday.addEventListener('change', checkBirthday);
+el_birthmonth.addEventListener('change', checkBirthday);
+el_birthyear.addEventListener('change', checkBirthday);
 
 
 // Declaration des fonction de controle de données
@@ -129,11 +132,51 @@ function checkLastname()
     }
 }
 
-// ...
-// ...
-// ...
-// ...
-// ...
+function checkEmail()
+{
+    var email = el_email.value;
+
+    if (!/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(email)) {
+        isValid = false;
+        el_email.style = "border: 1px solid red";
+    } else {
+        el_email.style = "border: 1px solid green";
+    }
+}
+
+function checkRepeatedEmail()
+{
+    var email = el_email.value;
+    var remail = el_remail.value;
+
+    if (email != remail) {
+        isValid = false;
+        el_remail.style = "border: 1px solid red";
+    } else {
+        el_remail.style = "border: 1px solid green";
+    }
+}
+
+function checkPassword()
+{
+    var password = el_password.value;
+
+    if (!/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#\$%\^\&*\)\(+=._-]).{8,32}$/.test(password)) {
+        isValid = false;
+        el_password.style = "border: 1px solid red";
+    } else {
+        el_password.style = "border: 1px solid green";
+    }
+}
+
+function checkBirthday()
+{
+    var day = el_birthday.value;
+    var month = el_birthmonth.value;
+    var year = el_birthyear.value;
+
+    // Utilisation du plugin "moment.js"
+}
 
 // Fonction de controle du formulaire
 function checkForm(event) 
@@ -142,11 +185,9 @@ function checkForm(event)
     // --
     checkFirstname();
     checkLastname();
-    // ...
-    // ...
-    // ...
-    // ...
-    // ...
+    checkEmail();
+    checkRepeatedEmail();
+    checkPassword();
     
 
     // Controle de l'etat du formulaire
