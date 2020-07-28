@@ -31,8 +31,23 @@ for (let i=1; i<=31; i++)
 // Générer le champ "birthmonth"
 
 
-// Générer le champ "birthyear"
 
+// Générer le champ "birthyear"
+var date = new Date;
+for (let i=date.getFullYear(); i >= date.getFullYear() - 100; i--) 
+{
+    // Create d'une balise HTML
+    let option = document.createElement('OPTION');
+
+    // Ajoute de l'attribut "value" sur l'<option>
+    option.setAttribute('value', i);
+
+    // Injection du texte dans l'<option>
+    option.textContent = i;
+
+    // Inject <option> dans le <select>
+    birthyear.appendChild(option);
+}
 
 
 
