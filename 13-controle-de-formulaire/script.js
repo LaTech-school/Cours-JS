@@ -70,12 +70,41 @@ for (let i=date.getFullYear(); i >= date.getFullYear() - 100; i--)
 var form = document.getElementsByTagName('FORM')[0];
 
 // Ecoute l'evenement de soumission du formulaire
-form.addEventListener('submit', event => {
+form.addEventListener('submit', checkForm);
 
+// Fonction de controle du formulaire
+function checkForm(event) 
+{
+    // Etat par defaut du formulaire
+    // --
+    var isValid = true;
+
+
+    // Controle du form
+    // --
     console.log("Envois du form");
+    
 
-    // Annule la soumission du formulaire
-    // preventDefault > annule le comportement par defaut de l'evenement "submit"
-    event.preventDefault();
-    // equi: <form onsubmit="return false;">
-});
+
+
+
+
+
+    
+
+
+    // Controle de l'etat du formulaire
+    // --
+
+    // Si le formulaire N'EST PAS (!) valid (TRUE)
+    // Si le formulaire est FALSE
+    // if (isValid == false)
+    if (!isValid)
+    {
+        // Annule la soumission du formulaire
+        // preventDefault > annule le comportement par defaut de l'evenement "submit"
+        event.preventDefault();
+        // equi: <form onsubmit="return false;">
+    }
+
+}
