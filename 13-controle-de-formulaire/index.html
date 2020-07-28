@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de formulaire</title>
+</head>
+<body>
+    
+    <form method="POST">
+
+        <!-- Firstname -->
+        <div>
+            <label for="firstname">Firstname</label>
+            <input type="text" id="firstname" name="firstname">
+        </div>
+
+        <!-- Lastname -->
+        <div>
+            <label for="lastname">Lastname</label>
+            <input type="text" id="lastname" name="lastname">
+        </div>
+
+        <!-- Gender -->
+        <div>
+            <label for="male">
+                <input type="radio" id="male" name="gender"> Male
+            </label>
+            <label for="female">
+                <input type="radio" id="female" name="gender"> Female
+            </label>
+            <label for="neither">
+                <input type="radio" id="neither" name="gender"> Male
+            </label>
+        </div>
+
+        <!-- Birthday -->
+        <div>
+            <label for="birth_day">Date of bith</label>
+            <select name="birth[day]" id="birth_day">
+                <option value=""></option>
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+            </select>
+            <select name="birth[month]" id="birth_month">
+                <option value=""></option>
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+            </select>
+            <select name="birth[year]" id="birth_year">
+                <option value=""></option>
+                <option value="2000">2000</option>
+                <option value="1999">1999</option>
+                <option value="1998">1998</option>
+            </select>
+        </div>
+
+        <!-- Email -->
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <!-- Repeated Email -->
+        <div>
+            <label for="repeated_email">Repeat your email</label>
+            <input type="email" id="repeated_email" name="repeated_email">
+        </div>
+
+        <!-- Password -->
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+        </div>
+
+        <!-- Password -->
+        <div>
+            <label for="tof">
+                <input type="checkbox" id="tof" name="tof">
+                I agree to the terms of service
+            </label>
+            
+        </div>
+
+    </form>
+
+</body>
+</html>
