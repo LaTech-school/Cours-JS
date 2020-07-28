@@ -33,3 +33,23 @@ console.log(second);
 // recup. des millisecondes
 var ms = date.getMilliseconds();
 console.log(ms);
+
+
+
+function clock() {
+
+    // Init. de l'objet Date
+    var sec = getLesSecondes();
+
+    // Cibler les elements HTML
+    var xxxx = document.getBidule("yyyy");
+
+    // Injection de la donnée  02,04,10,15
+    xxxx.innerHTML = sec;
+
+    // console.log("Tic Tac");
+
+}
+
+clock();
+setInterval(clock, 500);
