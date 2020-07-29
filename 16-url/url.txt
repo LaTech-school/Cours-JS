@@ -1,0 +1,74 @@
+http://www.site.com:80/articles/fichier.html?firstname=Bruce&lastname=wayne
+https://www.site.com:443/articles/fichier.html#firstname=Bruce&lastname=wayne
+
+
+schema                  http, https, ftp, mailto, tel, skype, itunes, torrent
+schema + :              protocol    http:, mailto:, tel:
+//                      sur un système de fichiers
+
+Nom de domaine          site.com                pointe vers un ordinateur sur le réseau (le serveur)
+domaine                 site 
+TLD Top Level Domain    .com                    permet de connaitre le registrar
+Sous domaine            www.                    pointe vers un répertoire sur le serveur
+
+La racine du site       /
+Système de fichiers     /articles/fichier.html
+Les répertoires         /articles/chemin/vers/fichier/
+Les fichiers            fichier.html 
+
+Les paramètres
+
+Les paramètres pour le serveur      ?
+Les paramètres pour le client       #
+
+Liste des paramètres                clé=valeur&clé=valeur
+Séparateur de paramètres            &
+
+Les ancres                          #top            renvois vers <div id="top">
+
+
+
+
+mailto:bruce@wayne-enterprise.net
+
+protocol                mailto:
+user                    bruce 
+user sur le serveur     @
+Domaine du serveur      wayne-enterprise.net 
+TLD                     .net
+
+
+
+http://ArnaudBDL@github.com/OSW3/depot.git
+
+protocol                http://
+user                    ArnaudBDL 
+user sur le serveur     @
+Domaine du serveur      github.com
+TLD                     .com
+Systeme de fichiers     /OSW3/depot.git
+Fichier                 depot.git 
+Nom de fichier          depot 
+extension               .git
+
+
+
+ftp://user:password@server.com:21/www/
+
+protocol                                ftp://
+Nom d'utilisateur                       user
+Séparateur utilisateur/mot de passe     :
+Mot de passe de l'utilisateur           password
+user sur le serveur                     @
+Domaine du serveur                      server.com
+TLD                                     .com
+Numéro de port                          :21
+Système de fichiers                     /www/
+
+
+
+URL : Uniform Resource Localtor         http://www.site.com:80/articles/fichier.html
+URN : Uniform Resource Name             www.site.com:80/articles/fichier.html?firstname=Bruce&lastname=wayne
+URI : Uniform Resource Identifier       http://www.site.com:80/articles/fichier.html?firstname=Bruce&lastname=wayne
+
+
