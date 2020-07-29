@@ -42,14 +42,30 @@ $('.enfant').first().html("Hello");
 // ex: $('.red').css('background', "red");
 // ex: $('.red').css({background: "red"});
 
-console.log( $('#pere').height() );
+// console.log( $('#pere').height() );
 
 // Chainage de méthodes
-$('.enfant').first()
-    .height('120px')
-    .css({background: 'pink', color: "red"})
-    .css('border-width', "15px")
-    .html("Yoppp!!")
-    .append(' Yep')
-    .prepend('YOLOOO')
-;
+// $('.enfant').first()
+//     .height('120px')
+//     .css({background: 'pink', color: "red"})
+//     .css('border-width', "15px")
+//     .html("Yoppp!!")
+//     .append(' Yep')
+//     .prepend('YOLOOO')
+// ;
+
+
+// Jquery : evenement de "click"
+// --
+
+// $('.testClick').click(() => {
+//     alert( $('.testClick').html() );
+// });
+
+$('.testClick').on('click', 
+    function() {
+        
+        alert( $(this).html() );
+
+    }
+);
