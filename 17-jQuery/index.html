@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <style>
+        div {
+            padding: 20px;
+
+            border-style: solid;
+            border-width: 5px;
+        }
+        #grand-pere {
+            border-color: red;
+        }
+        #pere {
+            border-color: green;
+        }
+        .enfant {
+            border-color: blue;
+        }
+        .petit-enfant {
+            border-color: coral;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="grand-pere">
+
+        <div id="pere">
+
+            <div class="enfant soeur"></div>
+            <div class="enfant frere">
+
+                <div class="petit-enfant frere"></div>
+                <div class="petit-enfant soeur"></div>
+                <div class="petit-enfant frere"></div>
+                <div class="petit-enfant soeur"></div>
+                <div class="petit-enfant frere"></div>
+
+            </div>
+            <div class="enfant soeur"></div>
+            <div class="enfant frere"></div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
