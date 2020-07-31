@@ -69,3 +69,11 @@ $('.testClick').on('click',
 
     }
 );
+
+
+$('.frere').on('click', function() {
+    $('.frere').css('background', "blue");
+});
+$('.soeur').on('click', function() {
+    $(this).css({'background': "pink"});
+});
